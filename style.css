@@ -27,7 +27,7 @@ p {
     border: 1px solid #B4B4B4;
     border-radius: 0.7rem;
     padding: 2rem;
-    width: 50%;
+    width: fit-content;
 }
 
 .row {
