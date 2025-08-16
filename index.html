@@ -2,37 +2,117 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oder Confirmation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="order" data-order-id="746223" data-price="799" data-product="iPhone 16 128GB Ultramarine" data-shipping="29">
-  </div>
-  <div id="content" class="container">
-    <div class="row">
-      <div class="column">
-        <h3>Checkout</h3>
-        <div class="order-details">
-          <p>Order #<span id="order-id-display"></span></p>
-          <p><span id="order-product-display"></span></p>
-          <p>Price: $<span id="order-price-display"></span></p>
-          <p>Shipping: $<span id="order-shipping-display"></span></p>
+
+    <div class="container">
+        <div class="section-border">
+            <h4>Order Details</h4>
         </div>
-        <div class="order-details">
-        <p>Total: $<span id="order-total-display"></span></p>
-        <div class="row-dense">
-        <input type="text" id="coupon-code" placeholder="Enter coupon code">
-        <button id="apply-coupon">Apply</button>
+        <div id="order-details" class="section-border column space-m">
+            <h2 id="order-id"></h2>
+            <div class="row space-xl">
+                <div class="column space-s">
+                    <p class="p2">Order Date</p>
+                    <b>
+                        <p id="today-date"></p>
+                    </b>
+                </div>
+
+                <div class="column space-s">
+                    <p class="p2">Payment</p>
+                    <b>
+                        <p>Visa - 1234</p>
+                    </b>
+                </div>
+
+                <div class="column space-s">
+                    <p class="p2">Status</p>
+                    <div class="label"><b>Processing</b></div>
+                </div>
+            </div>
+            <div>
+                <p class="p2">Address</p>
+                <b>
+                    <p>72 Example St, Melbourne</p>
+                </b>
+            </div>
+
+
         </div>
+        <div id="product-qty" class="row-space section-border">
+            <div class="row space-s">
+                <img class="product-img" src="/images/iphone16.webp">
+                <div class="column" style="justify-content: center;">
+                    <b>
+                        <p>iPhone 16 </p>
+                    </b>
+                    <p class="p2">Apple</p>
+                </div>
+            </div>
+            <div class="column">
+                <b>
+                    <p></p>$799
+                </b>
+                <p class="p2">Qty: 1</p>
+            </div>
         </div>
-      </div>
-      <div id="image" class="img"></div>
+        <div class="column section-border space-m">
+            <div class="column">
+                <div class="row-space">
+                    <p class="p2">Subtotal</p>
+                    <b>
+                        <p id="subtotal"></p>
+                    </b>
+                </div>
+                <div class="row-space">
+                    <p class="p2">Shipping</p>
+                    <b>
+                        <p id="shipping"></p>
+                    </b>
+                </div>
+                <div class="row-space">
+                    <p class="p2">Taxes</p>
+                    <b>
+                        <p id="taxes"></p>
+                    </b>
+                </div>
+                <div class="row-space">
+                    <p class="p2">Discount</p>
+                    <div class="row space-s">
+                        <div id="discount-label"></div>
+                        <b>
+                            <p id="discount"></p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div id="coupon" class="row space-m">
+                <input id="code" type="text" placeholder="Have a coupon code?">
+                <button class="btn"><b>Apply</b></button>
+
+            </div>
+
+        </div>
+        <div class="column section space-m">
+            <div class="row-space">
+                <b>
+                    <p>Total</p>
+                </b>
+                <b>
+                    <p id="total"></p>
+                </b>
+            </div>
+            <button id="pay-now" class="main-btn"><b>Pay Now</b></button>
+        </div>
     </div>
-  </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
