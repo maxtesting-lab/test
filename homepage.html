@@ -6,7 +6,6 @@
   <title>Home</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
-    /* tiny layout helpers without changing your design system */
     .page { width: 960px; max-width: 92vw; }
     .nav a { text-decoration: none; }
     .card {
@@ -14,9 +13,17 @@
       border-radius: 0.75rem;
       padding: 1rem;
       background: var(--bg-color-card);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
     }
     .card .title { font-weight: 600; }
     .link-like { color: var(--primary-color); text-decoration: none; }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
   </style>
 </head>
 <body>
@@ -56,16 +63,16 @@
     <!-- Featured grid -->
     <section class="section">
       <div class="row space-l" style="flex-wrap: wrap;">
-        <!-- Card 1 -->
-        <div class="card column space-s" style="width:280px;">
-          <img class="product-img" src="https://via.placeholder.com/320x200" alt="Product 1"/>
-          <div class="title">Minimal Backpack</div>
-          <p class="p2">Compact, durable, daily carry.</p>
+        <!-- iPhone 16 -->
+        <a href="https://maxtesting-lab.github.io/test/" target="_blank" class="card column space-s" style="width:280px;">
+          <img class="product-img" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/IPhone_16_concept.jpg" alt="iPhone 16"/>
+          <div class="title">iPhone 16</div>
+          <p class="p2">The next generation of performance and design.</p>
           <div class="row row-space" style="align-items:center;">
-            <b>$49</b>
-            <button class="btn">Add to cart</button>
+            <b>$999</b>
+            <button class="btn">View</button>
           </div>
-        </div>
+        </a>
 
         <!-- Card 2 -->
         <div class="card column space-s" style="width:280px;">
