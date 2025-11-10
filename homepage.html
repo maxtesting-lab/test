@@ -25,6 +25,29 @@
       color: inherit;
     }
   </style>
+  <script>
+// Get a query parameter by name from the URL
+function getQueryParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+// Set a cookie for the root domain, available across subdomains
+function setCookie(name, value, days) {
+  const maxAge = days * 24 * 60 * 60; // days to seconds
+  const domain = "." + window.location.hostname.split('.').slice(-2).join('.'); // example.com
+
+  document.cookie = `${name}=${encodeURIComponent(value)}; path=/; domain=${domain}; max-age=${maxAge}; secure; samesite=Lax`;
+}
+
+// Main: look for click_id and store it
+(function () {
+  const clickId = getQueryParam("click_id");
+  if (clickId) {
+    setCookie("click_id", clickId, 365); // store for 1 year
+  }
+})();
+</script>
 </head>
 <body>
 
@@ -132,3 +155,4 @@
 
 </body>
 </html>
+
