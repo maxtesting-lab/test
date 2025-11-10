@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* tiny layout helpers without changing your design system */
+    .page { width: 960px; max-width: 92vw; }
+    .nav a { text-decoration: none; }
+    .card {
+      border: 1px solid var(--border-color);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      background: var(--bg-color-card);
+    }
+    .card .title { font-weight: 600; }
+    .link-like { color: var(--primary-color); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="container page">
+    <!-- Top Bar -->
+    <header class="section-border row-space">
+      <div class="row space-s">
+        <div class="label"><b>Store</b></div>
+        <h4>Acme Shop</h4>
+      </div>
+      <nav class="row space-m nav">
+        <a class="p2" href="#">Home</a>
+        <a class="p2" href="#">Shop</a>
+        <a class="p2" href="#">About</a>
+        <a class="p2" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="section">
+      <div class="column space-m">
+        <h2>Everything you need, nicely packaged.</h2>
+        <p class="p2">Quality products, fast checkout, and a clean experience.</p>
+        <div class="row space-s">
+          <a href="#" class="main-btn" style="width:auto;">Start shopping</a>
+          <a href="#" class="btn" style="width:auto;">View cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-border">
+      <h4>Featured</h4>
+    </div>
+
+    <!-- Featured grid -->
+    <section class="section">
+      <div class="row space-l" style="flex-wrap: wrap;">
+        <!-- Card 1 -->
+        <div class="card column space-s" style="width:280px;">
+          <img class="product-img" src="https://via.placeholder.com/320x200" alt="Product 1"/>
+          <div class="title">Minimal Backpack</div>
+          <p class="p2">Compact, durable, daily carry.</p>
+          <div class="row row-space" style="align-items:center;">
+            <b>$49</b>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card column space-s" style="width:280px;">
+          <img class="product-img" src="https://via.placeholder.com/320x200" alt="Product 2"/>
+          <div class="title">Wireless Earbuds</div>
+          <p class="p2">All-day battery and clear sound.</p>
+          <div class="row row-space" style="align-items:center;">
+            <b>$79</b>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card column space-s" style="width:280px;">
+          <img class="product-img" src="https://via.placeholder.com/320x200" alt="Product 3"/>
+          <div class="title">Ceramic Mug</div>
+          <p class="p2">Heat-retaining, dishwasher safe.</p>
+          <div class="row row-space" style="align-items:center;">
+            <b>$15</b>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <div class="section-border">
+      <h4>Why shop with us</h4>
+    </div>
+    <section class="section">
+      <div class="row space-xl" style="flex-wrap: wrap;">
+        <div class="column space-s" style="max-width:280px;">
+          <div class="success-label"><b>Fast</b></div>
+          <p class="p2">Quick checkout and reliable shipping.</p>
+        </div>
+        <div class="column space-s" style="max-width:280px;">
+          <div class="label"><b>Secure</b></div>
+          <p class="p2">Encrypted payments and data protection.</p>
+        </div>
+        <div class="column space-s" style="max-width:280px;">
+          <div class="label"><b>Support</b></div>
+          <p class="p2">Friendly, responsive customer care.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-border row-space">
+      <p class="p2">© 2025 Acme Shop</p>
+      <div class="row space-m">
+        <a class="p2 link-like" href="#">Privacy</a>
+        <a class="p2 link-like" href="#">Terms</a>
+        <a class="p2 link-like" href="#">Help</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
