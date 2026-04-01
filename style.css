@@ -1,0 +1,23 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.top-bar-container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    gap: 1rem;
+    
+}
+
+.top-bar-button{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
